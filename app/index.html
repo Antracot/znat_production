@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Ликвидация юридических лиц</title>
+	<meta name="description" content="Ликвидация юридических  лиц с любыми долгами. Работаем по Татарстану.  Опытные юристы, 8 лет на рынке.">
+	<meta name="keywords" content="Ликвидация ООО, Закрытие ООО, Ликвидация предприятия, Ликвидация с долгами, Ликвидация лица, Ликвидация юридического лица, Ликвидация 2016, Как закрыть фирму быстро, Ликвидация без проверки, Ликвидация с задолженностью, Варианты ликвидации фирмы, Ликвидация бизнеса с долгами, Методы ликвидации, Ликвидация организации, Полная ликвидация ООО">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<!-- <link rel="import" id="add_map" href="../ajax/map.html"> -->
+
+
+	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style></style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load CSS Start -->
+	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+
+
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compiled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+
+</head>
+
+<body>
+<div class="my_popup hidden">
+	<div class="message">
+		<div class="close_button"><img src="../img/close_btn.png" alt="close"></div>
+		<p class="p_popup">Спасибо за заявку. Наш менеджер свяжется с Вами в ближайшее время!</p>
+	</div>
+</div>	
+<div class="callback_top hidden">
+<div class="callback_wrap">
+		<h2 class="h2_callback_top">Обратный <span class="green_line_span">звонок</span></h2>
+		<div class="close_btn_callback"><a href="#" id="callback_top_close">+</a></div>
+
+		<div class="callback_btn_wrap">
+			<form>
+				<input type="hidden" name="project_name" value="Компания Знать">
+				<input type="hidden" name="admin_email" value="admin@mail.com">
+				<input type="hidden" name="form_subject" value="Заявка с сайта Знать">
+
+				<input type="text" class="sec_inp callback_inp" name="Имя" placeholder="Имя" required>
+				<input type="text" class="sec_inp callback_inp" name="Телефон" placeholder="Телефон" required>
+				<button id="zak_zvon" class="button callback_button">Заказать звонок</button>
+			</form>
+		</div>
+		<div class="callback_bottom"><img src="../img/buble_calling.png" alt=""></div>
+		
+	</div>
+</div>
+
+<!-- <div class="header-top clearfix">
+    <a class="l-right toggle-menu" href="#">
+      <i></i>
+      <i></i>
+      <i></i>
+    </a>
+</div> -->
+  
+<!-- <nav class="hide">
+<div class="wrap" id="menu_wrap">
+<div class="m-wrap">
+	<div class="menu_logo"></div>
+	<div class="menu_cont">
+		<p class="p_menu"><span class="green_point"></span> <a href="#page_one" title="Начало">Начало</a> <span class="green_point"></span> <a href="#page_two" title=">Заблуждения">Заблуждения</a> <span class="green_point"></span> <a href="#page_three" title="Заявка">Заявка</a> <span class="green_point"></span> 
+		<br>
+		<span class="green_point"></span> <a href="#page_four" title="Проблемы, которые мы решаем"> Проблемы, которые мы решаем</a> <span class="green_point"></span> 
+		<br>
+		<span class="green_point"></span> <a href="#page_five" title="Опрос">Опрос</a> <span class="green_point"></span>
+		<br>
+		<span class="green_point"></span> <a href="#page_six" title="Проблемы, которых вы избежите">Проблемы, которых вы избежите</a> <span class="green_point"></span>
+		<br>
+		<span class="green_point"></span> <a href="#page_seven" title="Этапы работы">Этапы работы</a> <span class="green_point"></span> <a href="#page_eight" title="Факты о компании">Факты о компании</a> <span class="green_point"></span>
+		<br>
+		<span class="green_point"></span> <a href="#page_nine" title="Наша команда">Наша команда</a> <span class="green_point"></span>
+		<br>
+		<span class="green_point"></span> <a href="#page_ten" title="Контактная информация">Контактная информация</a> <span class="green_point"></span></p>
+	</div>
+</div>	
+</div>
+</nav> -->
+
+<div class="open_menu hidden animated fadeIn fadeInLeft">
+<div class="menu_wrap">
+	<div class="close">
+		<a href="javascipt:">
+			<img src="../img/close_menu.png" alt="">
+		</a>
+	</div>
+	<ul>
+		<li class="menu_item">
+			<a href="#page_one" >Начало</a><br>
+		</li>
+		<li>
+			<a href="#page_two">Заблуждения</a><br>
+		</li>
+		<li>
+			<a href="#page_three">Заявка</a><br>
+		</li>
+		<li>
+			<a href="#page_four">Проблемы,<br>которые мы решаем</a><br>
+		</li>
+		<li>
+			<a href="#page_five">Опрос</a><br>
+		</li>
+		<li>
+			<a href="#page_six">Проблемы,<br>которых вы избежите</a><br>
+		</li>
+		<li>
+			<a href="#page_seven">Этапы работы</a><br>
+		</li>
+		<li>
+			<a href="#page_eight">Факты о компании</a><br>
+		</li>
+		<li>
+			<a href="#page_nine">Команда</a><br>
+		</li>
+		<li>
+			<a href="#page_ten">Контакты</a><br>
+		</li>
+	</ul>
+</div>
+</div>
+
+<div class="menu hidden" id="menu_hid"> 
+	<div class="wrap">
+		 <a id="menu_open_hid" href="javascript:" class="menu_btn open menu_btn"><img src="img/menu_lines.png" alt="menu"></a>
+		<div class="logo_min"></div>
+		<p class="menu_title">Ликвидация юридических лиц</p>
+		<p class="menu_title">+7 843 238 98 98</p>
+		<a href="#callback" id="callback_open_menu" class="menu_callbeck">Заказать звонок</a>
+		<!-- <a href="#" class="menu_callbeck" data-event="zak_zvon">Заказать звонок</a> -->
+	</div>
+</div>
+
+<div id="fullpage">
+
+
+<section class="header vertical-scrolling" id="sec1">
+
+	<div class="wrap">
+	<div class="m-wrap">
+	    <div class="headline">
+	    	<div class="menu_btn">
+	        <a id="menu_open" href="javascript:" class="menu_btn open"><img src="img/menu_lines.png" alt="menu"></a>
+	    	</div>
+	        <div class="logo"></div>
+	        <div class="call">
+	            <span class="phone">+7 843 238 98 98</span>
+	            <a href="#callback" id="callback_open" class="callback" data-event="zak_zvon" data-form="Top Form">Заказать звонок</a>
+	        </div>
+	        <h1 class="header_h1">Ликвидация юридических лиц</h1>
+	    </div>
+	    
+	        
+	        <h2 id="header_h2">За <span class="green_line_span">14 дней</span> избавим Вас<br>от финансовой ответственности</h2>
+	        <p class="bubble_img"><img src="img/buble_sec1.png" alt="buble image"></p>
+	        <h3 id="bubble">путем смены руководителя без проблем с налоговой<br>в соответствии с законом №14-ФЗ</h3>
+	        <p class="header_p">Более <span class="green_color_span">5 000</span> проведенных процедур ликвидации за <span class="green_color_span">8</span> лет работы</p>
+	        <a href="#page_two"><div id="bottom_arrow"></div></a>
+		</div>
+	</div>
+</section>
+
+
+<section class="vertical-scrolling" id="sec2">
+        <div class="wrap">
+        	<div class="m-wrap">
+                <h2 class="sec2_h2"><span class="green_color_span">Заблуждения,</span> о которых Вам рассказали друзья</h2>
+                <div class="cont_sec2">
+                	<div class="left_block">
+	                	<div class="left_item">
+	                		<p><u class="active" data-id="1" id="left_1">Ваша деятельность в организации прекратится, и  налоговая будет преследовать Вас, как старого руководителя</u></p>
+	                		<p><u  data-id="2" id="left_2">Учредитель несет такую же юридическую ответственность за деятельность фирмы, как и руководитель общества</u></p>
+	                		<p><u data-id="3" id="left_3">Участники общества продолжают нести ответственность за деятельность организации даже после выхода из нее</u></p>
+	                		<p><u data-id="4" id="left_4">Процедуру ликвидации легко отменить и вернуть прежнего руководителя</u></p>
+						</div>
+                	</div>
+                	<div class="centr_block">
+                		<a class="elem bil_elem active" data-id="1"></a>
+                		<div class="line"></div>
+                		<a class="elem bil_elem" data-id="2"></a>
+                		<div class="line"></div>
+                		<a class="elem bil_elem" data-id="3"></a>
+                		<div class="line"></div>
+                		<a class="elem bil_elem" data-id="4"></a>
+                	</div>
+                	<div class="tab_content">
+						<div class="" id="tab_1">	
+		                	<div class="right_block" >
+		            			<p>Результат нашей работы в данном случае - снятие полномочий со старого директора и выход старого участника из общества. Подтверждающие тому документы, которые будут у вас на руках: решение участников на смену директора, передаточный акт, обновленная выписка из ЕГРЮЛ. Их вы можете предоставить, как ответ на какие-либо запросы со стороны налоговой.</p>
+		                	</div>
+	                	</div>
+						<div class="hidden" id="tab_2">
+		                	<div class="right_block" >
+		                			<p>Согласно пункту 1, ст. 2 от 8.02.1998 ФЗ №14 об Обществах с ограниченной ответственностью, участники общества не отвечают по его обязательствам и несут риск убытков, связанных с деятельностью общества в пределах стоимости принадлежащих им долей в уставном капитале.</p>
+		                	</div>
+	                	</div>
+	                	<div class="hidden" id="tab_3">
+		                	<div class="right_block hidden">
+		                			<p>При выходе, участник отчуждает долю обществу и оформляет нотариальное заявление, содержащее в себе сведения его добровольного выхода из общества. Данное заявление с отметкой общества остается у участника и может служить в качестве ответа на запросы со стороны налоговой, контрагентов и пр.</p>
+		                	</div>
+	                	</div>
+	                	<div class="hidden" id="tab_4">
+		                	<div class="right_block hidden" >
+		                			<p>Данный вариант событий теоретически имеет место быть, включает в себя ряд сложностей, таких как дорогостоящий заказ экспертизы подписей, сбор необходимых доказательств, затраты на представительство в судах. На практике данный исход событий встречается очень редко.</p>
+		                	</div>
+						</div>
+					</div>
+                </div>
+            </div>
+		</div>	            
+</section>
+
+<section class="vertical-scrolling" id="sec3">
+		<div class="wrap">
+			<div class="m-wrap">
+                <h2 class="sec3_h2">Узнайте стоимость <span class="green_color_span">прямо сейчас</span></h2>
+            		<p class="sec3_p">Оставьте заявку и наш менеджер перезвонит Вам в течение <span class="green_line_span">15 минут</span></p>
+			
+            	<div class="sec3_centr">
+			<form >
+					<input type="hidden" name="project_name" value="Компания Знать">
+					<input type="hidden" name="admin_email" value="admin@mail.com">
+					<input type="hidden" name="form_subject" value="Заявка с сайта Знать">
+
+            		<div class="sec3_wrap_centr step3_1 " id="step3_1">
+            			<p class="sec3_p2"><span class="green_line_span">Какую роль</span> при выборе подрядчика вы играете?</p>
+                        <div class="but_wrap">
+                        	<input style="display: none" id="step3_1_1" type="text" name="Шаг1-1" />
+	                        <a class="button" onClick="document.getElementById('step3_1_1').value = 'Я принимаю решение'">Я принимаю решение</a>
+                        	<input style="display: none" id="step3_1_2" type="text" name="Шаг1-2" />
+    	                    <a class="button" onClick="document.getElementById('step3_1_2').value = 'Я собираю информацию'">Я собираю информацию</a>	
+						</div>
+					</div>
+
+					<div class="sec3_wrap_centr step3_2 hidden" id="step3_2">	
+                        <p class="sec3_p2"><span class="green_line_span">Кому должна</span> ваша организация?</p>
+                        <div class="but_wrap1 ">
+                        	<input style="display: none" id="step3_2_1" type="text" name="Шаг2-1" />
+                        	<a class="button" onClick="document.getElementById('step3_2_1').value = 'Никому'">Никому</a>
+                        	<input style="display: none" id="step3_2_2" type="text" name="Шаг2-2" />	
+                        	<a class="button" onClick="document.getElementById('step3_2_2').value = 'Налоговой'">Налоговой</a>
+                        	<input style="display: none" id="step3_2_3" type="text" name="Шаг2-3" />	
+                        	<a class="button" onClick="document.getElementById('step3_2_3').value = 'Контрагентам'">Контрагентам</a>					
+                        	<input style="display: none" id="step3_2_4" type="text" name="Шаг2-4" />	
+                        	<a class="button" onClick="document.getElementById('step3_2_4').value = 'Банку'">Банку</a>					
+                        </div>
+					</div>
+
+					<div class="sec3_wrap_centr step3_3 hidden" id="step3_3">                        
+                        <p class="sec3_p2">Сориентируйте нас <span class="green_line_span">по срокам</span></p>
+                        <div class="but_wrap1">
+                        	<input style="display: none" id="step3_3_1" type="text" name="Шаг3-1" />
+                        	<a class="button" onClick="document.getElementById('step3_3_1').value = 'Очень срочно'">Очень срочно</a>
+                        	<input style="display: none" id="step3_3_2" type="text" name="Шаг3-2" />
+                        	<a class="button" onClick="document.getElementById('step3_3_2').value = 'Время есть'">Время есть</a>
+                        </div>
+					</div>	
+
+                    <div class="sec3_wrap_centr step3_4 hidden" id="step3_4">    
+						<p class="sec3_p2">Заполните форму и <span class="green_line_span">узнайте стоимость</span></p>
+						<div class="but_wrap2">
+                            <input class="sec_inp sec3_inp" name="Имя" type="text" placeholder="Введите имя" required>
+                            <input class="sec_inp sec3_inp" name="Телефон" type="text" placeholder="Введите телефон" required>
+                            <button name="Форма связи - страница 3" class="button">Узнать стоимось</button>
+                        </div>
+            		</div>
+            </form>
+            		
+            	</div>
+            </div>	
+        </div>
+</section>
+
+<section class="vertical-scrolling" id="sec4">
+	<div class="wrap">
+		<div class="m-wrap">
+	        <h2 class="sec4_h2">Проблемы, которые мы <span class="green_color_span">решаем</span></h2>
+	        	<div class="line_wrap">
+			        <div class="box" id="item1"><p>Долги перед налоговой<br>или контрагентом</p></div>
+	            	<div class="box" id="item2"><p>Лишние расходы<br>на содержание<br>ненужных фирм</p></div>
+			        <div class="box" id="item3"><p>Давление со стороны<br>контролирующих<br>органов</p></div>
+	            	<div class="box" id="item4"><p>Риск потерять<br>личное имущество</p></div>
+			        <div class="box" id="item5"><p>Фирма стала<br>тяжелым грузом,<br>который не позволяет<br>развиваться</p></div>
+				</div>
+		</div>	
+ 	</div>
+</section>
+
+<!-- <section class="vertical-scrolling" id="sec5">
+	<div class="wrap">
+		<div class="m-wrap">
+			<div class="sec5_cont">
+        	   	<h2 class="sec5_h2"><span class="green_color_span">Обращение руководителя</span> Юридического центра <span class="green_color_span">Знать</span></h2>
+	        		
+	        			<div class="sec5_play_btn">
+	        				<a  href="#" class="sec5_play_ico"></a>
+	        			</div>
+	        		
+          		<p class="sec5_p">Гарантия возврата денег!<br>В случае, если мы не поменяли директора в течение <span class="green_line_span">14 дней</span><br>после подписания договора, <span class="green_line_span">возвращаем деньги.</span></p>
+			</div>
+		</div>	
+	</div>
+</section> -->
+
+<section class="vertical-scrolling" id="sec6">
+	<div class="wrap">
+	<div class="m-wrap">
+			<h2 class="sec6_h2">Помогите нам определить способ,<br><span class="green_color_span">как быстро избавить Вас от проблемной фирмы</span></h2>
+		<div class="sec6_cont">
+		<form>
+			<input type="hidden" name="project_name" value="Компания Знать">
+			<input type="hidden" name="admin_email" value="admin@mail.com">
+			<input type="hidden" name="form_subject" value="Заявка с сайта Знать">	
+
+			<!-- ANKETA A -->
+			<div class="content_wrap step6_1">
+				<h3><span class="green_line_span">Какую роль</span> при выборе подрядчика вы играете?</h3>
+				<input style="display: none" id="step6_1_1" type="text" name="Шаг1-1" />
+				<a class="button btn_size_big" onClick="document.getElementById('step6_1_1').value = 'Я принимаю решение'">Я принимаю решение</a>
+				<input style="display: none" id="step6_1_2" type="text" name="Шаг1-2" />
+				<a class="button btn_size_big" onClick="document.getElementById('step6_1_2').value = 'Я собираю информацию'">Я собираю информацию</a>
+			</div>
+
+			<!-- ANKETA B -->
+			<div class="content_wrap step6_2 hidden">
+				<h3>Оставте данные, и <span class="green_line_span">мы направим Вам необходимую информацию</span></h3>
+				<input type="text" id="email" name="e-mail" class="sec_inp inp_big" placeholder="E-mail" required>
+				<a class="button btn_size_big">Получить предложение</a>
+				<!-- <div class="beck_to_step" ><a id="to_step1"><p><&#8211;&#8211;&#8211; предыдущий шаг</p></a></div> -->
+			</div>
+
+			<!-- ANKETA C -->
+			<div class="content_wrap step6_3 hidden">
+				<h3><span class="green_line_span">Кому должна</span> ваша организация?</h3>
+				<input style="display: none" id="step6_2_1" type="text" name="Шаг2-1" />
+				<a class="button btn_size_small" onClick="document.getElementById('step6_2_1').value = 'Никому'">Никому</a>
+				<input style="display: none" id="step6_2_2" type="text" name="Шаг2-2" />
+				<a class="button btn_size_small" onClick="document.getElementById('step6_2_2').value = 'Налоговой'">Налоговой</a>
+				<input style="display: none" id="step6_2_3" type="text" name="Шаг2-3" />
+				<a class="button btn_size_small" onClick="document.getElementById('step6_2_3').value = 'Контрагентам'">Контрагентам</a>
+				<input style="display: none" id="step6_2_4" type="text" name="Шаг2-4" />
+				<a class="button btn_size_small" onClick="document.getElementById('step6_2_4').value = 'Банку'">Банку</a>
+				<!-- <div class="beck_to_step" id="to_step1"><p><&#8211;&#8211;&#8211; предыдущий шаг</p></div> -->
+			</div>
+
+			<!-- ANKETA D -->
+			<div class="content_wrap step6_4 hidden">
+				<h3>Сориентируйте нас <span class="green_line_span">по срокам</span></h3>
+				<input style="display: none" id="step6_3_1" type="text" name="Шаг3-1" />
+				<a class="button btn_size_small" onClick="document.getElementById('step6_3_1').value = 'Очень срочно'">Очень срочно</a>
+				<input style="display: none" id="step6_3_2" type="text" name="Шаг3-2" />
+				<a class="button btn_size_small" onClick="document.getElementById('step6_3_2').value = 'Время есть'">Время есть</a>
+				<!-- <div class="beck_to_step"><a  id="to_step2"><p><&#8211;&#8211;&#8211; предыдущий шаг</p></a></div> -->
+			</div>
+
+			<!-- ANKETA E -->
+			<div class="content_wrap step6_5 hidden">
+				<h2>Ваша фирма может быть ликвидирована за <span>14 дней</span></h2>	
+				<p>Заполните данные и узнайте, как <span class="green_line_span">мы можем Вам помочь.</span></p>
+				<input type="text" class="sec_inp inp_middle" name="Имя" placeholder="Имя" required>
+				<input type="text" class="sec_inp inp_middle" name="Телефон" placeholder="Телефон" required>
+				<button class="button btn_size_middle">Узнать стоимость</button>
+				<!-- <div class="beck_to_step"><a  id="to_step3"><p><&#8211;&#8211;&#8211; предыдущий шаг</p></a></div> -->
+			</div>
+		</form>
+			<!-- ANKETA E -->
+			<!-- <div class="content_wrap step6 hidden" id="sec6_anketa6">
+				<h3>Пожалуйста, введите Ваши <span class="green_line_span">имя и телефон</span></h3>
+				<a href="#"><div class="close_btn x_elem"></div></a>
+			</div> -->
+
+			<!-- ANKETA G -->
+			<!-- <div class="content step7 hidden" id="sec6_anketa7">
+				<h2>Спасибо, ваша заявка <span class="green_color_span">отправлена.</span> Стоимость &#8212; <span class="green_color_span">от 35 000р</span></h2>
+				<h3>В ближайшее время <span class="green_line_span">наши специалисты свяжутся с вами</span> и ответят на все ваши вопросы.</h3>
+				<h3>Если вы ошиблись при вводе имени и номера телефона, <span class="green_line_span">отредактируйте </span> данные.</h3>
+				<a class="button btn_size_middle" href="#">Редактировать заявку</a>
+			</div> -->
+
+			<!-- ANKETA H -->
+			<!-- <div class="content step8 hidden" id="sec6_anketa8">
+				<h2>Спасибо, ваша заявка <span class="green_color_span">отправлена.</span> Стоимость &#8212; <span class="green_color_span">от 35 000р</span></h2>
+				<h3>В ближайшее время <span class="green_line_span">наши специалисты свяжутся с вами</span> и ответят на все ваши вопросы.</h3>
+				<h3>Если вы ошиблись при вводе имени и номера телефона, <span class="green_line_span">отредактируйте </span> данные.</h3>
+				<input type="text" class="sec_inp inp_middle" placeholder="Имя">
+				<input type="text" class="sec_inp inp_middle" placeholder="Телефон">
+				<a class="button btn_size_middle" href="#">Отправить изменения</a>
+			</div> -->
+					
+			<!-- ANKETA I -->
+			<!-- <div class="content step9 hidden" id="sec6_anketa9">
+				<h2>Ваша фирма может быть ликвидирована за <span>14 дней</span></h2>	
+				<p>Заполните данные и узнайте, как <span class="green_line_span">мы можем Вам помочь.</span></p>
+				<input type="text" class="sec_inp inp_middle error" placeholder="Имя">
+				<input type="text" class="sec_inp inp_middle" placeholder="Телефон">
+				<a class="button btn_size_middle" href="#">Узнать стоимость</a>
+				<h5>Введите имя</h5>
+			</div> -->
+		</div>
+	</div>	
+	</div>
+</section>
+
+<section class="vertical-scrolling" id="sec7">
+	<div class="wrap">
+		<div class="m-wrap">
+			<div class="sec7_header">
+				<h2 class="sec7_h2"><span class="green_color_span">Проблемы, которых вы избежите,</span><br>подписав с нами договор</h2>
+				<img src="../img/dogovor_icon.png" alt="dogovor" class="icon_dogovor">
+				<h4 class="sec7_h4"><span class="green_line_span"><b>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</b><a href="договор_Изменения.docx">Скачать<u> договор</u></a></span></h4>
+			</div>
+			<div class="sec7_ul">
+				<div class="sec7_li"><p id="sec7_item1">Работа<br> без договора</p></div>
+				<div class="sec7_li"><p id="sec7_item2">Срыв сроков</p></div>
+				<div class="sec7_li"><p id="sec7_item3">Удорожание<br>стоимости<br>в процессе</p></div>
+				<div class="sec7_li"><p id="sec7_item4">Юридические<br>ошибки</p></div>
+			</div>
+			<div>
+				<h3 class="sec7_h3">Мы работаем по официальному договору,<br>стоимость согласуется в самом начале и изменению не подлежит.<br>За затяжку строков <span class="green_line_span"> мы несем ответственность</span> рублем!</h3>
+			</div>
+		</div>	
+	</div>
+</section>
+
+<section class="vertical-scrolling" id="sec8">
+	<div class="wrap">
+		<div class="m-wrap">
+			<div class="">
+				<h2 class="sec8_h2"><span class="green_color_span">Этапы</span> работы</h2>
+			</div>
+			<div class="sec8_slider">
+
+				<!-- SLIDE 1 -->
+				<div class="" id="sec8_item1">
+				<!-- <a href="#" class="left_arrow" id="left_arrow"></a> -->
+					<div class="sec8_itemLeft">
+						<img src="../img/item1_sec8.png" alt="item1">
+					</div>
+					<div class="sec8_itemRight">
+						<p class="sec8_p"><span class="green_color_span">1</span> Определение стратегии ликвидации</p>
+					</div>
+					<!-- <a href="#" class="right_arrow" id="right_arrow"></a> -->
+				</div>
+
+				<!-- SLIDE 2 -->
+				<div class="hidden" id="sec8_item2" >
+					<div class="sec8_itemLeft" >
+						<img src="../img/item2_sec8.png" alt="item2">
+					</div>
+					<div class="sec8_itemRight">
+						<p class="sec8_p"><span class="green_color_span">2</span> Подписание договора<br>с клиентом</p>
+					</div>
+				</div>
+
+				<!-- SLIDE 3 -->
+				<div class="hidden" id="sec8_item3">
+				<!-- <a href="#" class="left_arrow" id="left_arrow"></a> -->
+					<div class="sec8_itemLeft" >
+						<img src="../img/item3_sec8.png" alt="item3">
+					</div>
+					<div class="sec8_itemRight">
+						<p class="sec8_p"><span class="green_color_span">3</span> Предоставление клиентом необходимой докунтации</p>
+					</div>
+					<!-- <a href="#" class="right_arrow" id="right_arrow"></a> -->
+				</div>
+
+				<!-- SLIDE 4 -->
+				<div class="hidden" id="sec8_item4">
+				<!-- <a href="#" class="left_arrow" id="left_arrow"></a> -->
+					<div class="sec8_itemLeft">
+						<img src="../img/item4_sec8.png" alt="item4">
+					</div>
+					<div class="sec8_itemRight">
+						<p class="sec8_p"><span class="green_color_span">4</span> Освобождение клиента от финансовой ответственности путем смены руководства фирмы</p>
+					</div>
+					<!-- <a href="#" class="right_arrow" id="right_arrow"></a> -->
+				</div>
+
+				<!-- SLIDE 5 -->
+				<div class="hidden" id="sec8_item5">
+				<!-- <a href="#" class="left_arrow" id="left_arrow"></a> -->
+					<div class="sec8_itemLeft" >
+						<img src="../img/item5_sec8.png" alt="item5">
+					</div>
+					<div class="sec8_itemRight">
+						<p class="sec8_p"><span class="green_color_span">5</span>Вывод старого<br>состава из фирмы</p>
+					</div>
+					<!-- <a href="#" class="right_arrow" id="right_arrow"></a> -->
+				</div>
+
+				<!-- SLIDE 6 -->
+				<div class="hidden" id="sec8_item6">
+				<!-- <a href="#" class="left_arrow" id="left_arrow"></a> -->
+					<div class="sec8_itemLeft" >
+						<img src="../img/item6_sec8.png" alt="item6">
+					</div>
+					<div class="sec8_itemRight">
+						<p class="sec8_p"><span class="green_color_span">6</span>Подписание акта<br>выполненных работ</p>
+					</div>
+					<!-- <a href="#" class="right_arrow" id="right_arrow"></a> -->
+				</div>
+			</div>
+			<div class="sec8_box">
+				<p>Заполните форму и <span class="green_line_span">получите консультацию юриста</span> с опытом 5 лет<br>в сфере ликвидации юридических лиц</p>
+				<form>	
+					<input type="hidden" name="project_name" value="Компания Знать">
+					<input type="hidden" name="admin_email" value="admin@mail.com">
+					<input type="hidden" name="form_subject" value="Заявка с сайта Знать">
+
+					<input type="text" class="sec_inp inp_middle" name="Имя" placeholder="Имя" required>
+					<input type="text" class="sec_inp inp_middle" name="Телефон" placeholder="Телефон" required>
+					<button data-event="zak_zvon" data-form="Middle Form" class="button btn_size_middle">Отправить заявку</button>
+				</form>	
+			</div>
+		</div>		
+	</div>
+</section>
+
+<section class="vertical-scrolling" id="sec9">
+	<div class="wrap">
+		<div class="m-wrap">
+			<div class="">
+				<h2 class="sec9_h2"><span class="green_color_span">Факты</span> о нашей компании</h2>
+			</div>
+			<div class="sec9_line1">
+				<div class="sec9_item">
+					<h3 class="sec9_h3">2008</h3>
+					<img class="sec9_icon" src="../img/icon1_sec9.png" alt="icon1">
+					<p class="sec9_p"><span class="green_line_span">Работаем</span> с 2008 г.</p>
+				</div>
+				<div class="sec9_item">
+					<h3 class="sec9_h3">500</h3>
+					<img class="sec9_icon" src="../img/icon2_sec9.png" alt="icon2">
+					<p class="sec9_p">Более 500 фирм находятся<br><span class="green_line_span">в процессе</span></p>
+				</div>
+				<div class="sec9_item">
+					<h3 class="sec9_h3">15</h3>
+					<img class="sec9_icon" src="../img/icon3_sec9.png" alt="icon3">
+					<p class="sec9_p"><span class="green_line_span">Еженедельно</span> принимаем в работу 15 фирм</p>
+				</div>
+			</div>
+			<div class="sec9_line2">
+				<div class="sec9_item">
+					<h3 class="sec9_h3">5 000</h3>
+					<img class="sec9_icon" src="../img/icon4_sec9.png" alt="icon4">
+					<p class="sec9_p">5 000 <span class="green_line_span">бесплатных</span> консультаций</p>
+				</div>
+				<div class="sec9_item">
+					<h3 class="sec9_h3">15</h3>
+					<img class="sec9_icon" src="../img/icon5_sec9.png" alt="icon5">
+					<p class="sec9_p">15 минут &#8212;<br><span class="green_line_span">реакция</span> на заявку</p>
+				</div>
+				<div class="sec9_item">
+					<h3 class="sec9_h3">100</h3>
+					<img class="sec9_icon" src="../img/icon6_sec9.png" alt="icon6">
+					<p class="sec9_p">100% фирм <span class="green_line_span">доведены</span> до завершения</p>
+				</div>
+			</div>
+		</div>	
+	</div>
+</section>
+	
+<section class="vertical-scrolling" id="sec10">
+	<div class="wrap">
+		<div class="m-wrap">
+			<div>
+				<h2 class="sec10_h2">Наша <span class="green_color_span">команда</span></h2>
+			</div>
+			<!-- OUR TEAM -->
+			<div class="sec10_all_members">
+				<div class="sec10_item">
+					<div class="sec10_photo">
+						<img src="../img/sec10_photo1.jpg" alt="" class="sec10_img">
+						<img src="../img/sec10_line.png" alt="" class="sec10_line_img">
+						<a href="javascript:" class="sec10_a" id="first_memb_open">+</a>
+					</div>
+					
+					<h3 class="sec10_h3"><span class="green_line_span">Салахова<br>Резеда Зарифулловна</span></h3>
+					<p class="sec10_p">Менеджер</p>
+				</div>
+				<div class="sec10_item">
+					<div class="sec10_photo">
+						<img src="../img/sec10_photo2.jpg" alt="" class="sec10_img">
+						<img src="../img/sec10_line.png" alt="" class="sec10_line_img">
+						<a href="javascript:" class="sec10_a" id="second_memb_open">+</a>
+					</div>
+					<h3 class="sec10_h3"><span class="green_line_span">Курбанова<br>Алия Халимовна</span></h3>
+					<p class="sec10_p">Юрист</p>
+				</div>
+				<div class="sec10_item">
+					<div class="sec10_photo">
+						<img src="../img/sec10_photo3.jpg" alt="" class="sec10_img">
+						<img src="../img/sec10_line.png" alt="" class="sec10_line_img">
+						<a href="javascript:" class="sec10_a" id="third_memb_open">+</a>
+					</div>
+					<h3 class="sec10_h3"><span class="green_line_span">Урманчеев<br>Раиль Рафаилевич</span></h3>
+					<p class="sec10_p">Менеджер</p>
+				</div>
+			</div>
+			
+			<!-- COMANDA 1 -->
+			<div class="member_wrap hidden" id="first_memb">
+				<div class="sec10_left_block">
+					<div class="edu">
+						<p class="p_edu"><span class="green_color_span">Образование</span><br>Высшее юридическое,<br>Ульяновский Государственный Университиет (УлГУ)<br> кафедра юриспруденции,<br> 2007-2012</p>
+						<p class="p_edu"><span class="green_color_span">Опыт работы в продажах</span><br>6 лет</p>
+					</div>	
+				</div>
+				<div class="sec10_center_block">
+					<div class="sec10_photo">
+						<img src="../img/sec10_photo1.jpg" alt="" class="sec10_img">
+						<img src="../img/sec10_line.png" alt="" class="sec10_line_img">
+						<img src="../img/line_sec10.jpg" alt="" class="left_line">
+						<img src="../img/line_sec10.jpg" alt="" class="right_line">
+						<a href="javascript:" class="sec10_a" id="first_memb_close">+</a>
+					</div>
+					<h3 class="sec10_h3"><span class="green_line_span">Салахова<br>Резеда Зарифулловна</span></h3>
+					<p class="sec10_p">Менеджер</p>
+				</div>
+				<div class="sec10_right_block">
+				<div class="deviz">
+					<p class="p_deviz"><span class="green_color_span">Девиз по жини</span><br>"Без борьбы нет прогресса"</p>
+				</div>
+				</div>
+			</div>
+
+			<!-- COMANDA 2 -->
+			<div class="member_wrap hidden" id="second_memb">
+				<div class="sec10_left_block">
+					<div class="edu">
+						<p class="p_edu"><span class="green_color_span">Образование</span><br>АСО (КСЮИ),<br> юридический факультет,<br> 2007-2013</p>
+						<p class="p_edu"><span class="green_color_span">Опыт работы</span><br>3 лет</p>
+					</div>	
+				</div>
+				<div class="sec10_center_block">
+					<div class="sec10_photo">
+						<img src="../img/sec10_photo2.jpg" alt="" class="sec10_img">
+						<img src="../img/sec10_line.png" alt="" class="sec10_line_img">
+						<img src="../img/line_sec10.jpg" alt="" class="left_line">
+						<img src="../img/line_sec10.jpg" alt="" class="right_line">
+						<a href="javascript:" class="sec10_a" id="second_memb_close">+</a>
+					</div>
+					<h3 class="sec10_h3"><span class="green_line_span">Курбанова<br>Алия Халимовна</span></h3>
+					<p class="sec10_p">Юрист</p>
+				</div>
+				<div class="sec10_right_block">
+				<div class="deviz">
+					<p class="p_deviz"><span class="green_color_span">Девиз по жизни</span><br>"Люди постоянно придумывают<br>себе проблемы,<br>почему бы не придумать<br>себе счастье?"</p>
+				</div>
+				</div>
+			</div>
+
+			<!-- COMANDA 3 -->
+			<div class="member_wrap hidden" id="third_memb">
+				<div class="sec10_left_block">
+					<div class="edu">
+						<p class="p_edu"><span class="green_color_span">Образование</span><br>образование высшее,<br>КГЄУ,<br> 2004-2009</p>
+						<p class="p_edu"><span class="green_color_span">Трудовой стаж в продажах</span><br>8 лет</p>
+					</div>				
+				</div>
+				<div class="sec10_center_block">
+					<div class="sec10_photo">
+						<img src="../img/sec10_photo3.jpg" alt="" class="sec10_img">
+						<img src="../img/sec10_line.png" alt="" class="sec10_line_img">
+						<img src="../img/line_sec10.jpg" alt="" class="left_line">
+						<img src="../img/line_sec10.jpg" alt="" class="right_line">
+						<a href="javascript:" class="sec10_a" id="third_memb_close">+</a>
+					</div>
+					<h3 class="sec10_h3"><span class="green_line_span">Урманчеев <br>Раиль Рафаилевич</span></h3>
+					<p class="sec10_p">Менеджер</p>
+				</div>
+				<div class="sec10_right_block">
+					<div class="deviz">
+						<p class="p_deviz"><span class="green_color_span">Девиз по жизни</span><br>"Человека делают счастливым<br>три вещи: любовь,<br>интересная работа и возможность путешествовать"</p>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+</section>
+
+<section class="vertical-scrolling" id="sec11">
+	<div class="wrap">
+		<div class="m-wrap">
+			<div>
+				<h2 class="sec11_h2"> <span class="green_color_span">Контактная</span> информация</h2>
+				<p class="sec11_p">Наш офис находится на <span class="green_line_span"> ул. Пушкина, 54/1, 2 этаж. Бесплатная парковка</span> для клиентов</p>
+			</div>
+			<div class="sec11_contact_form ">
+				<div class="sec11_cont">
+					<p class="sec11_p">Остались вопросы?</p>
+				<form>
+					<input type="hidden" name="project_name" value="Компания Знать">
+					<input type="hidden" name="admin_email" value="admin@mail.com">
+					<input type="hidden" name="form_subject" value="Заявка с сайта Знать">
+
+					<input type="text" class="sec_inp inp_middle" name="Имя" placeholder="Имя" 
+					required>
+					<input type="text" class="sec_inp inp_middle" name="Телефон" placeholder="Телефон" required>
+					<textarea class="sec_inp inp_question" name="Вопрос" placeholder="Вопрос" required></textarea>
+					<button class="button btn_size_small">Спросить</button>
+
+					<input type="hidden" name="form" class="formname">
+				</form>
+				</div>
+			</div>	
+			<div class="sec11_footer">
+				<p class="sec11_p"><span class="green_line_span">Политика конфиденциальности</span>
+				</p>
+				<h4 class="sec11_h4">Все права защищены</h4>
+			</div>
+		</div>
+	</div>
+	<div id="map"><div>
+</section>
+
+	<div class="hidden"></div>	
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+
+	<!-- Load Scripts End -->
+</div>
+</body>
+</html>

@@ -1,0 +1,1016 @@
+@import "bourbon"
+@import "vars.sass"
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+//Load bsSlider-4
+@import "app/libs/bxslider-4/dist/jquery.bxslider.min"
+
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+*:focus
+	outline: none
+
+
+
+nav
+	width: 100%
+	height: 0px
+	position: absolute
+	top: 0
+	left: 0
+.bx-wrapper
+	background-color: transparent
+	border: none
+	height: 272px
+	box-shadow: none
+	.bx-viewport
+		height: 300px!important
+.bx-wrapper .bx-controls-direction a
+	height: 40px
+	width: 45px
+	top: 73%
+	margin-right: 6px
+	margin-left: 327px
+.bx-wrapper .bx-prev 
+	background: url(../img/left_arrow.png) no-repeat 
+.bx-wrapper .bx-prev:hover
+	background: url(../img/left_arrow_w.png) no-repeat
+.bx-wrapper .bx-next 
+	background: url(../img/right_arrow.png) no-repeat
+.bx-wrapper .bx-next:focus 
+	background: url(../img/right_arrow.png) no-repeat
+.bx-wrapper .bx-next:hover
+	background: url(../img/right_arrow_w.png) no-repeat
+.bx-wrapper .bx-loading 
+	background: url(../img/bx_loader.gif) center center no-repeat #ffffff			
+.mfp-close-btn-in .mfp-close
+	color: #fff
+
+#form_popup
+	padding: 35px 20px
+	background-color: #fff
+	max-width: 320px
+	position: relative
+	margin: auto
+	border: 2px solid #aaa
+	.p_popup
+		color: #000
+		font-size: 18px
+		font-weight: 200
+		line-height: 20px
+.mfp-close-btn-in .mfp-close
+	color: #000
+
+.menu
+	height: 60px
+	color: #e7e7e7
+	
+
+
+.sec_inp
+	font-family: Roboto, sans-serif
+	width: 200px
+	height: 40px
+	background-color: rgba(0,0,0,0.5)
+	border: 2px solid $green-color
+	display: inline-block
+	font-size: 15px
+	font-weight: 200
+	text-align: left
+	line-height: 34px
+	border-radius: 20px
+	transition: all .25s
+	margin: 10px 10px 10px 10px
+	padding: 10px
+	color: #fff
+	text-decoration: none
+	
+
+#sec2
+	background: url(../img/bg_sec2.jpg) no-repeat center top
+	background-size: cover 
+	text-align: center
+	// min-height: 770px
+	.sec2_h2
+		font-size: 34px
+		font-weight: normal
+		margin-top: 95px
+		letter-spacing: -0.3px
+		position: relative
+		&::before
+			content: ""
+			width: 112px
+			height: 120px
+			background: url(../img/arrow_sec2.png) no-repeat
+			display: block
+			position: absolute
+			top: -23px
+			left: 68px
+	.cont_sec2
+		text-align: center
+		font-size: 0
+		margin-top: 100px
+		.left_block
+			display: inline-block
+			width: 430px
+			min-height: 430px
+			float: left
+			.active
+				border-bottom: 2px $green-color solid!important
+				text-decoration: none
+			.left_item
+				display: block
+				font-size: 16px
+				list-style-type: none
+				font-weight: normal
+   				line-height: 300px
+				p
+					letter-spacing: 0.1px
+					text-align: left
+					width: 100%
+					max-width: 350px
+					line-height: 29px
+					margin: 1px 0 42px 20px
+					u
+						text-decoration: none
+						border-bottom: 1px dashed $grey-color
+
+		.centr_block
+			display: inline-block
+			width: 30px
+			min-height: 430px
+			float: left
+			overflow: visible
+
+			.elem
+				width: 30px
+				height: 30px
+				font-size: 17px
+				background-color: rgba(0,0,0,0.5)
+				border: 2px solid $green-color
+				border-radius: 50%
+				margin-bottom: 100px
+				display: inline-block
+				overflow: hidden
+				cursor: pointer
+			.active
+				background-image: url(../img/w_x.png)!important 
+				background-repeat: no-repeat
+				background-position: center center
+				background-color: $green-color
+							
+			.line
+				border-left: 2px solid #fff
+				height: 100px
+				margin-left: 14px
+				margin-top: -100px
+				opacity: 0.3
+			.bil_elem
+				background-image: url(../img/w_bil.png) 
+				background-repeat: no-repeat
+				background-position: center center
+			.bil_elem:hover
+				transition: all .25s
+				background-color: $green-color
+		.tab_content
+			min-height: 430px			
+
+		.right_block
+			display: inline-block
+			width: 520px
+			min-height: 430px
+			float: left
+			p
+				font-size: 20px
+				text-align: left
+				padding-top: 29px
+				padding-left: 38px
+				font-family: Roboto
+				line-height: 40px
+				font-weight: normal
+				letter-spacing: -0.3px
+			
+#sec3
+	background: url(../img/bg_sec3.jpg) no-repeat center top
+	background-size: cover 
+	text-align: center
+	// min-height: 840px
+	.sec3_h2
+		font-size: 34px
+		font-weight: normal
+		margin-top: 105px
+		letter-spacing: -0.3px
+		position: relative
+	.sec3_p
+		font-size: 20px
+		font-weight: 200
+		margin-top: 21px
+		letter-spacing: -0.6px
+		position: relative
+		&::after
+			content: ""
+			position: absolute
+			display: inline-block
+			width: 30px
+			height: 30px		
+			background: url(../img/time_icon.png)
+			margin-top: 11px
+			margin-left: 8px
+			
+			
+	.sec3_centr
+		width: 100%
+		max-width: 940px
+		padding: 48px
+		margin-top: 40px
+		margin: 113px auto
+		height: 310px
+		border: 2px solid #fff
+		position: relative
+		input
+			cursor: pointer
+		.sec3_wrap_centr
+			width: 940px
+			margin-top: 50px
+			position: absolute
+			left: 50%
+			margin-left: -470px
+		.sec3_p2
+			font-weight: 200
+			letter-spacing: -.1px
+			font-size: 20px
+		.but_wrap
+			font-size: 0
+			display: block
+			text-align: center
+			margin-top: 32px
+			.button
+				display: inline-block
+				width: 250px
+				text-align: center
+				margin: 0 20px 50px
+			
+		.but_wrap1
+			font-size: 0
+			display: block
+			text-align: center
+			.button
+				display: inline-block
+				width: 150px
+				text-align: center
+				margin: 32px 20px 20px 20px
+		
+		.but_wrap2
+			font-size: 0
+			display: block
+			text-align: center
+			.button
+				display: inline-block
+				width: 200px
+				text-align: center
+				margin: 32px 20px 20px 20px
+				cursor: pointer	
+			.sec3_inp
+				cursor: text
+				color: #fff
+				border: none
+				background-color: rgba(44,44,44,.9)
+
+
+#sec4
+	background: url(../img/bg_sec4.jpg) center no-repeat
+	background-size: cover 
+	text-align: center
+	// min-height: 714px
+
+	.sec4_h2
+		font-size: 35px
+		text-align: left
+		margin-top: 110px
+		margin-left: 20px
+		letter-spacing: -0.4px
+		span
+		&::after
+			content: " "
+			display: block			
+			width: 112px
+			height: 120px
+			background-image: url(../img/arrow_sec4.png)
+			margin-top: -70px
+			margin-left: 438px
+		
+	.line_wrap	
+		width: 100%
+		min-width: 980px
+		margin: 60px auto
+		.box
+			display: inline-block
+			height: 160px
+			width: 300px
+			position: absolute
+			p
+				font-size: 16px
+				font-family: Roboto
+				line-height: 30px
+				font-weight: normal
+				text-align: left 
+				letter-spacing: 0.2px
+		#item1
+			background: url(../img/item1_sec4.png) no-repeat
+			margin-top: 173px
+			margin-left: -470px
+			padding-left: 115px
+			padding-top: 48px 
+		#item2
+			background: url(../img/item2_sec4.png) no-repeat
+			margin-left: -300px
+			padding-left: 115px
+			padding-top: 33px 
+		#item3
+			background: url(../img/item3_sec4.png) no-repeat
+			margin-top: 173px
+			margin-left: -130px
+			padding-left: 115px
+			padding-top: 33px 
+		#item4
+			background: url(../img/item4_sec4.png) no-repeat
+			margin-left: 40px
+			padding-top: 48px
+			padding-left: 114px
+		#item5
+			background: url(../img/item4_sec5.png) no-repeat
+			margin-top: 173px
+			margin-left: 210px
+			padding-left: 115px 	
+			padding-top: 17px
+// #sec5
+// 	background: url(../img/bg_sec5.jpg) center top no-repeat
+// 	background-size: cover  
+// 	// min-height: 670px
+// 	text-align: center
+// 	.sec5_cont
+// 	.sec5_h2
+// 		margin-top: 101px
+// 		font-size: 34px
+// 	.sec5_play_btn
+// 		width: 240px
+// 		height: 240px
+// 		background-color: rgba(0,0,0,0.5)
+// 		border: 2px solid $green-color
+// 		border-radius: 50% 
+// 		margin: 52px auto
+// 		line-height: 240px
+// 		.sec5_play_ico
+// 			width: 60px
+// 			height: 60px
+// 			vertical-align: middle
+// 			display: inline-block
+// 			margin-left: 13px
+
+// 			background: url(../img/sec5_play.png) no-repeat center top
+// 		:hover
+// 			transition: all .25s
+// 			background: url(../img/sec5_play_w.png) no-repeat center top
+
+// 	.sec5_p
+// 		margin-top: -10px
+// 		font-size: 20px
+// 		line-height: 40px
+// 		span
+// 			line-height: 25px	
+		
+
+
+#sec6
+	// min-height: 740px
+	text-align: center
+	background: url(../img/bg_sec6.jpg) center no-repeat
+	background-size: cover 
+	.sec6_h2
+		font-size: 35px
+		margin-top: 69px
+		margin-left: 3px
+		letter-spacing: -1.0px
+		font-weight: normal
+	.sec6_cont
+		margin-top: 98px
+		margin-left: auto
+		margin-right: auto
+		max-width: 940px
+		width: 100%
+		height: 310px
+		border: 2px solid #fff
+		position: relative
+		h3
+			padding-top: 95px
+			font-size: 20px
+			letter-spacing: 0.2px
+		a
+			margin-top: 35px
+		.content_wrap
+			position: absolute
+			width: 940px
+			left: 50%
+			margin-left: -470px
+	#sec6_anketa1
+	#sec6_anketa2
+	#sec6_anketa3
+	#sec6_anketa4
+	h2
+		padding-top: 72px
+		font-size: 24px
+		font-weight: lighter
+		span
+			color: $green-color
+	p
+		padding-top: 23px
+		font-size: 20px
+		letter-spacing: -0.3px	
+	
+	#sec6_anketa5	
+		&::after
+			display: block
+			margin-left: 255px
+			margin-top: -168px
+			content: ""
+			background-image: url("../img/krest.png")
+			height: 40px
+			width: 40px
+			position: relative		
+	#sec6_anketa6
+		h3
+			padding-top: 143px
+			font-size: 20px
+			letter-spacing: -0.7px
+			font-weight: 200
+		.close_btn
+			display: block		
+			margin-left: 890px
+			margin-top: -153px
+			content: ""
+			background-color: $green-color
+			height: 30px
+			width: 30px
+			border-radius: 50px
+			position: relative
+		.x_elem
+			background-image: url(../img/w_x.png) 
+			background-repeat: no-repeat
+			background-position: 50%
+		.x_elem:hover
+			background-image: url(../img/b_x.png) 		
+	#sec6_anketa7
+		h2
+			padding-top: 52px
+		h3
+			font-size: 20px
+			font-weight: normal
+			padding-top: 25px
+			letter-spacing: -0.5px
+			line-height: 18px
+	#sec6_anketa8
+		h2
+			padding-top: 52px
+		h3
+			font-size: 20px
+			font-weight: normal
+			padding-top: 25px
+			letter-spacing: -0.5px
+			line-height: 18px
+	#sec6_anketa9
+		&::after
+			display: block
+			margin-left: 257px
+			margin-top: -182px
+			content: ""
+			background-image: url("../img/krest.png")
+			height: 40px
+			width: 40px
+			position: relative
+		h5
+			font-size: 13px
+			margin-left: -528px
+			margin-top: -4px 
+
+
+	.btn_size_big
+		display: inline-block
+		margin-top: 35px
+		margin-left: 19px
+		margin-right: 18px 
+		width: 250px
+		cursor: pointer
+	.btn_size_middle
+		display: inline-block
+		margin-top: 35px
+		width: 200px
+		cursor: pointer
+	.btn_size_small
+		display: inline-block
+		margin-top: 35px
+		margin-left: 19px
+		margin-right: 18px 
+		width: 150px
+		cursor: pointer	
+	.inp_big
+		width: 250px
+		border: none
+		background-color: rgba(44,44,44,0.9)
+		color: #fff
+	.inp_middle
+		display: inline-block
+		margin-top: 30px
+		margin-left: 0px
+		margin-right: 15px
+		width: 200px
+		border: none
+		background-color: rgba(44,44,44,0.9)
+		color: #fff
+	.error
+		border: 2px solid $error-color
+	.beck_to_step
+		position: absolute
+		top: 90%
+		width: 20%
+		left: 50%
+		margin-left: -10%
+		&:hover
+			color: $green-color
+			cursor: pointer
+			transition: all .25s
+		p
+			font-size: 12px
+			letter-spacing: 1.0px				
+
+#sec7
+	// min-height: 710px
+	text-align: center
+	background: url(../img/bg_sec7.jpg) center no-repeat top
+	background-size: cover 
+	.sec7_h2
+		font-size: 35px
+		margin-top: 105px
+		margin-left: 3px
+		letter-spacing: -1.0px
+		font-weight: normal
+	.sec7_h4
+		float: right
+		margin-top: -42px
+		margin-right: 51px
+		font-weight: 200
+		span
+			text-align: right
+
+		b
+			opacity: 0
+		a
+			color: #fff
+			text-decoration: none
+			&:hover
+				color: $green-color
+		u	
+			text-decoration: none
+			border-bottom-style: none
+			
+			span
+				/* border-bottom: #000 soli */
+		// &::after
+		// 	display: block
+		// 	margin-left: 323px
+		// 	margin-top: -57px
+		// 	content: ""
+		// 	background-image: url("../img/dogovor_icon.png")
+		// 	height: 30px
+		// 	width: 24px
+		// 	position: relative
+	.icon_dogovor
+		position: absolute
+		margin-left: 396px
+		margin-top: -55px	
+	.sec7_ul
+		font-size: 0
+		.sec7_li
+			font-size: 0
+			width: 190px
+			height: 190px
+			background-color: rgba(0,0,0,0.5)
+			border: 2px solid $green-color
+			border-radius: 50%
+			margin: 55px  30px
+			display: inline-block
+			line-height: 180px
+			p
+				font-size: 16px
+				display: inline-block
+				line-height: 31px
+				font-weight: 200
+				vertical-align: middle
+		:first-child
+			margin-left: 0px
+		:last-child
+			margin-right: 0px
+	.sec7_h3
+		font-size: 19px
+		margin-top: -14px
+		margin-left: -5px 
+		font-weight: 200
+		line-height: 40px
+		letter-spacing: -0.1px
+		span
+			line-height: 23px		
+
+#sec8
+	// min-height: 910px
+	text-align: center
+	background: url(../img/bg_sec8.jpg) center no-repeat top
+	background-size: cover 
+	.sec8_h2
+		font-size: 35px
+		margin-top: 101px
+		letter-spacing: -1.0px
+		font-weight: 400
+		&::before
+			display: block
+			margin-left: 338px
+			margin-top: -23px
+			content: ""
+			background-image: url("../img/arrow_sec8.png")
+			height: 120px
+			width: 112px
+			position: absolute
+	.sec8_slider
+		margin-top: 111px
+		margin-left: 410px
+		span
+			display: block
+			margin-bottom: 10px
+			margin-top: -12px
+		.sec8_itemLeft
+			float: left
+			display: inline-block
+		.sec8_itemRight
+			text-align: center
+			width: 316px
+			float: left
+			display: inline-block
+			margin-left: 30px
+		.sec8_p
+			letter-spacing: -0.3px
+			font-size: 20px
+			font-weight: 200
+			line-height: 40px
+		
+	.sec8_box
+		// margin-top: 117px
+		margin-left: auto
+		margin-right: auto
+		max-width: 940px
+		width: 100%
+		height: 250px
+		border: 2px solid #fff
+		.inp_middle
+			display: inline-block
+			margin-top: 30px
+			margin-left: 0px
+			margin-right: 15px
+			border: none
+			background-color: rgba(44,44,44,0.9)
+			color: #fff
+			
+		.btn_size_middle
+			display: inline-block
+			margin-top: 30px
+			width: 200px
+		p
+			padding-top: 43px
+			font-size: 20px
+			letter-spacing: -0.4px
+			font-weight: normal
+			line-height: 38px
+			span				
+				line-height: 23px	
+
+#sec9
+	// min-height: 705px
+	text-align: center
+	background: url(../img/bg_sec9.jpg) center no-repeat top
+	background-size: cover 
+	.sec9_h2
+		font-size: 35px
+		margin-top: 101px
+		letter-spacing: -1.0px
+		font-weight: 400
+	.sec9_line1
+		font-size: 0
+	.sec9_item
+		font-size: 18px
+		display: inline-block
+		width: 220px
+		height: 170px
+		float: left
+		margin-right: 100px
+		margin-top: 90px
+		text-align: left
+		position: relative
+		.sec9_h3
+			color: $green-color
+			font-weight: 400
+			font-size: 50px
+			letter-spacing: -2.0px
+			display: inline-block
+			padding-left: 18px
+		.sec9_icon
+			display: inline-block
+			float: left
+			position: absolute
+			top: 20px
+			margin-left: 15px 
+		.sec9_p	 				
+			text-align: left
+			font-size: 16px
+			margin-top: 16px
+			margin-left: 20px
+			line-height: 30px
+			span
+				line-height: 20px	
+
+	.sec9_line2
+		font-size: 0
+		.sec9_item
+			float: right
+			margin-right: 0px
+			margin-left: 135px
+			margin-top: 45px
+			width: 185px 
+
+#sec10
+	// min-height: 737px
+	text-align: center
+	background: url(../img/bg_sec10.jpg) center no-repeat top
+	background-size: cover
+	position: relative 
+	.sec10_h2
+		font-size: 35px
+		margin-top: 100px
+		letter-spacing: -0.1px
+		font-weight: 400
+	.sec10_all_members
+		font-size: 0px
+		position: absolute
+		.sec10_item
+			display: inline-block
+			width: 250px
+			height: 380px
+			margin-top: 109px
+			margin-right: 75px
+			margin-left: 20px
+			float: left
+			.sec10_photo
+				width: 250px
+				height: 250px
+				background-color: rgba(0,0,0,0.5)
+				border: 2px solid $green-color
+				border-radius: 50%
+				display: inline-block				
+				.sec10_img
+					width: 226px
+					height: 226px
+					border-radius: 50%
+					margin: 10px auto
+				.sec10_line_img
+					width: 12px
+					height: 12px
+					display: block
+					margin-top: -222px
+					margin-left: 210px
+				.sec10_a
+					width: 30px
+					height: 30px
+					background-color: $green-color
+					border-radius: 50%
+					color: #fff
+					font-weight: 200
+					font-size: 25px
+					text-decoration: none
+					display: block
+					margin-top: -37px
+					margin-left: 217px
+				:hover
+					color: #000
+		:last-child
+			margin-right: 0px
+
+	.sec10_h3
+		font-size: 20px
+		font-weight: 400
+		margin-top: 30px
+		line-height: 28px
+	.sec10_p
+		font-size: 16px	
+		margin-top: 6px
+
+	.member_wrap
+		width: 100%
+		font-size: 0
+		margin-top: 90px
+		.sec10_left_block
+			width: 280px
+			height: 290px
+			// border: 1px red solid
+			display: inline-block
+			float: left
+			line-height: 290px
+			.edu
+				display: inline-block
+				vertical-align: middle
+				margin-left: 55px
+			.p_edu
+				font-size: 16px
+				font-weight: 200	
+				margin-left: 22px
+				text-align: center
+				line-height: 32px
+				&:last-child
+					padding-top: 13px	
+
+		.sec10_center_block
+			// border: 1px red solid
+			width: 400px
+			height: 400px
+			display: inline-block
+			float: left
+			padding-top: 18px
+			padding-left: 20px
+			.sec10_photo
+				width: 250px
+				height: 250px
+				background-color: rgba(0,0,0,0.5)
+				border: 2px solid $green-color
+				border-radius: 50%
+				display: inline-block
+				.left_line
+					float: left
+					margin-top: 87px
+					margin-left: -62px 
+				.right_line
+					float: right
+					margin-top: 87px
+					margin-right: -62px
+				.sec10_img
+					width: 226px
+					height: 226px
+					border-radius: 50%
+					margin: 10px auto
+				.sec10_line_img
+					width: 12px
+					height: 12px
+					display: block
+					margin-top: -222px
+					margin-left: 210px
+				.sec10_a
+					width: 30px
+					height: 30px
+					background-color: $green-color
+					border-radius: 50%
+					color: #fff
+					font-weight: 200
+					font-size: 25px
+					text-decoration: none
+					display: block
+					margin-top: -37px
+					margin-left: 217px
+					transform: rotate(45deg)
+				:hover
+					color: #000
+		.sec10_right_block
+			width: 290px
+			height: 290px
+			// border: 1px red solid
+			display: inline-block
+			float: left
+			line-height: 290px
+		.deviz
+			display: inline-block
+			vertical-align: middle
+			.p_deviz
+				font-size: 16px
+				font-weight: 200	
+				margin-left: 22px
+				text-align: center
+				line-height: 32px
+
+#sec11
+	// min-height: 990px
+	text-align: center
+	//background: url(../img/bg_sec11.jpg) center no-repeat top
+	//background-size: cover
+
+
+	.sec11_h2
+		margin-top: 75px
+		font-size: 35px
+		letter-spacing: -0.6px
+		font-weight: 400
+	.sec11_p
+		margin-top: 19px
+		font-size: 20px
+		font-weight: 400
+		letter-spacing: -0.3px
+	.location
+		margin-top: 73px
+		text-align: center
+	.sec11_contact_form
+		margin-top: 150px
+		margin-right: auto
+		margin-left: auto 
+		border: 2px solid #fff
+		width: 940px
+		height: 380px	
+		text-align: center
+		.sec11_cont
+			margin-top: 50px	
+		.inp_middle
+			display: inline-block
+			margin-top: 30px
+			margin-left: 7px
+			margin-right: 10px
+			border: none
+			background-color: rgba(44,44,44,0.9)
+			color: #fff
+			:required 
+	    		background-color: red	
+			// :required 
+   			//border: 2px solid red
+
+		.inp_question
+			display: block
+			margin-left: auto
+			margin-right: auto
+			background-color: rgba(44,44,44,0.9)
+			border: none
+			width: 425px
+			height: 100px
+			color: #fff
+			&::-webkit-input-placeholder
+				vertical-align: top
+				
+
+		.btn_size_small
+			display: inline-block
+			width: 150px
+		.wrong_inp_value
+			color: $error-color	
+
+	.sec11_footer
+		margin-top: 70px
+	.sec11_h4
+		margin-top: 7px
+		font-size: 16px
+		font-weight: 200
+	figure
+		position: relative
+		width: 100%
+		height: 100%
+		margin: 0
+	object
+		position: relative
+		width: 100%
+		height: 100%
+	#map
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		z-index: 0
+
+//ALWAYS END
+@import "media"
+
